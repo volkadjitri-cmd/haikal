@@ -19,7 +19,9 @@ export async function registerRoutes(
   app.get("/api/questions", async (_req, res) => {
     try {
       const questions = await storage.getQuestions();
-      res.json(questions);
+      // Shuffle questions untuk urutan acak setiap kali
+      const shuffled = [...questions].sort(() => Math.random() - 0.5);
+      res.json(shuffled);
     } catch (error) {
       res.status(500).json({ error: "Gagal mengambil soal" });
     }
