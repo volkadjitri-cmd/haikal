@@ -5,6 +5,7 @@ import { Toaster } from "@/components/ui/toaster";
 import { TooltipProvider } from "@/components/ui/tooltip";
 import Intro from "@/pages/intro";
 import Home from "@/pages/home";
+import Challenge from "@/pages/challenge";
 import Quiz from "@/pages/quiz";
 import Result from "@/pages/result";
 import Scores from "@/pages/scores";
@@ -17,6 +18,7 @@ function Router() {
     <Switch>
       <Route path="/" component={Intro} />
       <Route path="/home" component={Home} />
+      <Route path="/challenge" component={Challenge} />
       <Route path="/quiz" component={Quiz} />
       <Route path="/result" component={Result} />
       <Route path="/scores" component={Scores} />

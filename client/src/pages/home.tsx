@@ -25,7 +25,7 @@ export default function Home() {
     }
 
     sessionStorage.setItem("studentName", studentName.trim());
-    setLocation("/quiz");
+    setLocation("/challenge");
   };
 
   return (
