@@ -59,6 +59,10 @@ async function buildAll() {
     external: externals,
     logLevel: "info",
   });
+
+  // Copy static client build to Vercel output if needed
+  // (Vercel expects static files in /client/dist/public or /public)
+}
 }
 
 buildAll().catch((err) => {
