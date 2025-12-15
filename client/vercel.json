@@ -1,4 +1,0 @@
-// This file tells Vercel to use the production build output for static assets
-{
-  "outputDirectory": "client/dist/public"
-}
